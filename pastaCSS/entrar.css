@@ -1,0 +1,154 @@
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f3f1ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .loader-content {
+    text-align: center;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .hero-carousel {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: #e5e5e5;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: 70vh;
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 0.6s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .slide h1 {
+    font-size: 4rem;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .view-btn {
+    padding: 0.8rem 2rem;
+    background: transparent;
+    border: 2px solid #000;
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .view-btn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  .cards-entrar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem 2rem;
+    background-color: #f3f1ea;
+  }
+  
+  .card-entrar {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .card-entrar:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-entrar h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-entrar p {
+    color: #666;
+    font-size: 0.95rem;
+  }
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background-color: #ffffff;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .logo span {
+    color: #676e6d;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 500;
+  }
+  
+  .buttons button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .signup {
+    background-color: #7e7a7a;
+    color: #fff;
+  }
+  
+  

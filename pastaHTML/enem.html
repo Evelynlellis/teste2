@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENEM - Guia Estudante</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f6f7;
+      color: #123;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .buttons button {
+      background-color: #7e7a7a;
+      color: white;
+      border: none;
+      padding: 0.4rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-left: 0.5rem;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f3f3f3;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+    .hero .text {
+      flex: 1 1 50%;
+      max-width: 600px;
+    }
+    .hero .image {
+      flex: 1 1 40%;
+      text-align: center;
+    }
+    .hero .image img {
+      width: 100%;
+      max-width: 350px;
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .section {
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .section img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 10px;
+    }
+    .section .text {
+      flex: 1 1 60%;
+      max-width: 600px;
+    }
+    h2 {
+      color: #105;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Guia Estudante<span>(logo)</span></div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Dúvidas</a></li>
+      </ul>
+    </nav>
+    <div class="buttons">
+      <button>Entrar</button>
+      <button>Sair</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="text">
+      <h1>Entenda tudo sobre o ENEM</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ad hic temporibus rerum illum accusamus velit officiis voluptas sint excepturi distinctio voluptatem maxime totam culpa sunt, odio, porro nisi blanditiis!</p>
+    </div>
+    <div class="image">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png" alt="Imagem ENEM">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="text">
+      <h2>Como é a prova do ENEM?</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum sit, deserunt vel facilis qui dignissimos tempore deleniti accusamus adipisci, optio, rem culpa delectus mollitia iure tempora commodi inventore veritatis odit?</p>
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/3771/3771493.png" alt="Prova ENEM">
+  </section>
+
+  <section class="section">
+    <img src="https://cdn-icons-png.flaticon.com/512/2250/2250399.png" alt="Estudo ENEM">
+    <div class="text">
+      <h2>Dicas de preparação</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae at accusantium earum molestiae maxime, cum, expedita animi placeat ipsum perspiciatis, debitis consectetur error cupiditate magnam adipisci nihil aliquid nulla veritatis?.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="text">
+      <h2>Redação Nota 1000</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio natus qui accusantium placeat a omnis quidem id. Labore mollitia omnis rem architecto totam numquam nam assumenda. Obcaecati natus quibusdam cum.</p>
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/4324/4324850.png" alt="Redação ENEM">
+  </section>
+</body>
+</html>

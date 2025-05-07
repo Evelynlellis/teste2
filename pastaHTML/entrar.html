@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Entrar - Guia Estudante</title>
+  <link rel="stylesheet" href="../pastaCSS/style.css">
+  <link rel="stylesheet" href="../pastaCSS/entrar.css">
+
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-content">
+      🎓<br>
+      <span>Carregando o portal estudantil...</span>
+    </div>
+  </div>
+  <header class="header">
+    <div class="logo">Guia Estudante<span>(logo)</span></div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Dúvidas</a></li>
+      </ul>
+    </nav>
+    <div class="buttons">
+      <a href="sair.html"><button class="signup">Sair</button></a>
+    </div>
+  </header>
+  
+
+  <section class="hero-carousel">
+    <div class="slide active">
+      <h1>GUIA + ESTUDANTE</h1>
+      <a href="#"><button class="view-btn">VER MAIS</button></a>
+    </div>
+    <div class="slide">
+      <h1>OPORTUNIDADES + ACESSO</h1>
+      <a href="#"><button class="view-btn">VER MAIS</button></a>
+    </div>
+    <div class="slide">
+      <h1>PROUNI + SISU</h1>
+      <a href="#"><button class="view-btn">VER MAIS</button></a>
+    </div>
+  </section>
+<section class="cards-entrar">
+    <div class="card-entrar" onclick="window.location.href='enem.html'">
+        <h3>Enem</h3>
+        <p>Informações claras e atualizadas sobre o Enem.</p>
+      </div>      
+  <div class="card-entrar" onclick="irParaConstrucao()"> <!-- Card 2 -->
+    <h3>ProUni</h3>
+    <p>Como se inscrever, requisitos e cronograma.</p>
+  </div>
+  <div class="card-entrar" onclick="irParaConstrucao()"> <!-- Card 3 -->
+    <h3>Sisu</h3>
+    <p>Todas as etapas explicadas de forma simples.</p>
+  </div>
+  <div class="card-entrar" onclick="irParaConstrucao()"> <!-- Card 4 -->
+    <h3>Provão Paulista</h3>
+    <p>Entenda como funciona e prepare-se melhor.</p>
+  </div>
+  </div>
+</section>
+
+  
+
+   
+
+  <script src="../pastaJS/script.js"></script>
+  <script>
+    function irParaConstrucao() {
+      window.location.href = "construcao.html";
+    }
+  </script>
+  
+</body>
+</html>
